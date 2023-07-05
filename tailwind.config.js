@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -10,6 +12,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'mobs' : '320px',
+        'mobm' : '375px',
+        'mobl' : '425px',
+        ...defaultTheme.screens,
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -18,6 +26,9 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins"],
       },
+      colors: {
+        primary: '#4f46e5'
+      }
     },
   },
   plugins: [],
