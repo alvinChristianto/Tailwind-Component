@@ -14,6 +14,9 @@ export default function Home() {
           <li>
             <Link href="/card">card</Link>
           </li>
+          <li>
+            <Link href="/card1">card1</Link>
+          </li>
         </ul>
       </div>
       <div className="border p-4 m-3 rounded-xl bg-slate-300">

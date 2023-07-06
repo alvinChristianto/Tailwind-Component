@@ -1,9 +1,11 @@
-import React from "react";
+import React from "react"
 import Image from "next/image";
 
-function Card1(props: any) {
+function Tipe1 (props:any) {
   return (
-    <div className="container bg-white w-auto px-4 pt-3 md:pt-10 lg:px-32">
+    <div>
+      tipe1
+      <div className="container bg-white w-auto px-4 pt-3 md:pt-10 lg:px-32">
       <div className="columns-1 md:columns-2">
         <div className="bg-white border rounded-lg overflow-hidden">
           <div className="relative pb-2.5">
@@ -25,7 +27,8 @@ function Card1(props: any) {
         </div>
       </div>
     </div>
-  );
-}
+    </div>
+  )
+};
 
-export default Card1;
+export default Tipe1;
